@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftImpact - Soluciones Digitales Responsables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            animation: slideDown 1.5s ease-in-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .service {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transform: scale(1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SoftImpact</h1>
+        <p>Soluciones Digitales Responsables</p>
+    </header>
+    <nav>
+        <a href="#about">Nosotros</a>
+        <a href="#services">Servicios</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+    <section id="about">
+        <h2>¿Quiénes somos?</h2>
+        <p>En SoftImpact, diseñamos herramientas tecnológicas accesibles y sostenibles que generan un impacto positivo
+            en la sociedad y el medio ambiente.</p>
+    </section>
+    <section id="services">
+        <h2>Servicios</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Aplicaciones Educativas</h3>
+                <p>Apps accesibles para el aprendizaje de programación y otros conocimientos en comunidades vulnerables.
+                </p>
+            </div>
+            <div class="service">
+                <h3>Software Sostenible</h3>
+                <p>Herramientas que optimizan recursos y fomentan prácticas responsables en empresas.</p>
+            </div>
+            <div class="service">
+                <h3>Consultoría Tecnológica</h3>
+                <p>Asesoría para digitalizar negocios de manera ética y eficiente.</p>
+            </div>
+            <div class="service">
+                <h3>Diseño Personalizado</h3>
+                <p>Desarrollo de proyectos tecnológicos adaptados a las necesidades de cada cliente.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna idea o proyecto en mente? ¡Hablemos!</p>
+        <p>Email: contacto@softimpact.com</p>
+        <p>Teléfono: +507 123-4567</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 SoftImpact. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
